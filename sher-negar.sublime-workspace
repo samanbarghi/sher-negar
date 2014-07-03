@@ -1,0 +1,831 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"circel",
+				"circleLocation"
+			],
+			[
+				"circl",
+				"circleFt"
+			],
+			[
+				"ng-swi",
+				"ng-switch	AngularJS"
+			],
+			[
+				"friend",
+				"friendsAnswers"
+			],
+			[
+				"frie",
+				"friendsAnswers"
+			],
+			[
+				"Friend",
+				"Friendsbarchartservice"
+			],
+			[
+				"$route",
+				"$routeParams	AngularJS"
+			],
+			[
+				"$rout",
+				"$routeParams	AngularJS"
+			],
+			[
+				"answerT",
+				"answerType"
+			],
+			[
+				"answerTyp",
+				"answerTypes"
+			],
+			[
+				"page",
+				"pageCloseParameters"
+			],
+			[
+				"cur",
+				"service.currentUser.LSUser.lsid"
+			],
+			[
+				"currn",
+				"currentUser"
+			],
+			[
+				"ng-sw",
+				"ng-switch	AngularJS"
+			],
+			[
+				"myans",
+				"myanswer"
+			],
+			[
+				"ng-switch",
+				"ng-switch-when	AngularJS"
+			],
+			[
+				"ng-swith",
+				"ng-switch-when	AngularJS"
+			],
+			[
+				"route",
+				"angular: $routeParams"
+			],
+			[
+				"$routp",
+				"angular: $routeParams"
+			],
+			[
+				"request",
+				"request_ids"
+			],
+			[
+				"FB",
+				"config.FBAPPID"
+			],
+			[
+				"analytics",
+				"analyticsSetUserId"
+			],
+			[
+				"Flur",
+				"FlurryAgent"
+			],
+			[
+				"late",
+				"newsFeedLatestTimeStampCalled"
+			],
+			[
+				"get",
+				"getqofday"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/index.html",
+			"settings":
+			{
+				"buffer_size": 4842,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/main.html",
+			"settings":
+			{
+				"buffer_size": 7662,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/controllers/main.js",
+			"settings":
+			{
+				"buffer_size": 5616,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/bower_components/Raphael.Export/raphael.export.js",
+			"settings":
+			{
+				"buffer_size": 10425,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/main.scss",
+			"settings":
+			{
+				"buffer_size": 2612,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 243.0,
+		"selected_items":
+		[
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				"form",
+				"Format Code"
+			],
+			[
+				"for",
+				"Format Code"
+			],
+			[
+				":W",
+				":w - Save"
+			],
+			[
+				":",
+				":w - Save"
+			],
+			[
+				"format",
+				"Format Code"
+			],
+			[
+				":we",
+				":w - Save"
+			],
+			[
+				":s",
+				":w - Save"
+			],
+			[
+				":save",
+				":w - Save"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"less",
+				"Set Syntax: LESS"
+			],
+			[
+				"git:c	",
+				"Git: Commit"
+			],
+			[
+				"git:stat",
+				"Git: Status"
+			],
+			[
+				"git:commit",
+				"Git: Commit"
+			],
+			[
+				"git:com",
+				"Git: Commit"
+			],
+			[
+				"git:",
+				"Git: Status"
+			],
+			[
+				"pacak",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"pacakage",
+				"Package Control: Install Package"
+			],
+			[
+				"packager",
+				"Package Control: Remove Package"
+			],
+			[
+				"git:status",
+				"Git: Status"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/saman/.config/sublime-text-3/Packages/User/Plain text.sublime-settings",
+		"/home/saman/Programming/sher-negar-2/app/scripts/app.js",
+		"/home/saman/Programming/sher-negar-2/app/styles/main.scss",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/scripts/controllers/aggregate.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/index.main.html",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/index.html",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/scripts/services/barChartService.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/scripts/services/friendsbarchartservice.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/scripts/directives/swiper.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/views/aggregate.html",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/scripts/app.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/views/login.html",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/scripts/controllers/profile.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/views/index.html",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/scripts/controllers/login.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/scripts/controllers/main.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/scripts/controllers/answer.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/scripts/services/scatterChartService.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/scripts/security/facebook/facebook.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/scripts/directives/follow-btn.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/config.xml",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/less/bs/lifestats.less",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/less/bs/variables.less",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/scripts/services/config/config.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/index.prep.html",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/scripts/services/lifestatsHttpInterceptor.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/scripts/services/Page.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/views/answer.html",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/scripts/directives/ngmax.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/scripts/directives/ngmin.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/lib/jquery.min.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/views/profile.html",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/scripts/directives/chart.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/bower_components/angularjs-swipe/swiper.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/scripts/directives/lifestatheader1.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/scripts/directives/fallbackimgsrc.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/scripts/directives/hashtaghighlighter.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/views/search.html",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/scripts/controllers/search.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/scripts/security/security.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/bower_components/angularitics/src/angulartics-ga.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/lib/angulartics/src/angulartics-google-analytics.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/lib/angulartics-flurry.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/bower_components/angularitics/src/angulartics.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/bower_components/angularitics/dist/angulartics-ga.min.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/bower_components/angularitics/src/angulartics-segmentio.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/less/bs/responsive-utilities.less",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/bower_components/angularitics/dist/angulartics-google-analytics.min.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/bower_components/angularitics/dist/angulartics-ga-cordova.min.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/scripts/controllers/index.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/less/bs/wells.less",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/less/bs/bootstrap2/lifestats.less",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/less/bs/bootstrap2/variables.less",
+		"/home/saman/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/saman/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/less/bs/bootstrap2/footer.less",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/less/bs/bootstrap.less",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/styles/lifestats.less",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/styles/lifestats.css",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/styles/bootstrap-responsive.css",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/styles/bootstrap-responsive.less",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/scripts/security/index.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/scripts/filters/fromNow.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/bower_components/angularitics/src/angulartics-google-analytics.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/bower_components/angularitics/src/angulartics-mixpanel.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/bower_components/angularitics/src/angulartics-kissmetrics.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/bower_components/angularitics/src/angulartics-scroll.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/node_modules/connect-livereload/index.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/scripts/services/follow.js",
+		"/home/saman/Programming/lifestats-main/workspace/LifeStatsFrontend2/app/scripts/services/amIAFollower.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"poem",
+			"saveimage",
+			"console.log",
+			"ng-hid",
+			"startAngle",
+			"proce",
+			"circleFt",
+			"showAlpha: true",
+			"submit",
+			"back",
+			"canvas",
+			"10",
+			"<label",
+			"label>",
+			"control-label",
+			" \\n ",
+			"\\",
+			"full_angle",
+			"__h",
+			"currentUser",
+			"scatter",
+			"active",
+			"position",
+			"access_token",
+			"user.",
+			"$routeparams",
+			"routeparams",
+			"My Questions",
+			"MyQuestions",
+			"myquestion",
+			"watchLoginChange",
+			"Facebook",
+			"fastclick",
+			"fasetcli",
+			"FB.init",
+			"facebook",
+			"isAuthent",
+			"position",
+			"AnswerType",
+			"form.answer",
+			"alert",
+			"PUBLIC",
+			"message",
+			"novalidate",
+			"answer",
+			"anonymous",
+			"share",
+			"Question of the",
+			"popular",
+			"active",
+			"profile",
+			"privacy",
+			"scope.myanswers",
+			"myanswers",
+			"answer",
+			"share",
+			"-8",
+			"-9",
+			"-8",
+			"console.log",
+			"swiper",
+			"});\n",
+			"$scope.on",
+			"slider",
+			"follow-btn",
+			"img",
+			"SITEURL",
+			"url",
+			"question.question",
+			"invite",
+			"rootScope",
+			"overall",
+			"slider",
+			"questionDefer",
+			"promise",
+			"Question of the day",
+			"Question of the week",
+			"Question of the Day",
+			"isCurrentUser",
+			":answer",
+			"facebook",
+			"visibility",
+			"facebook",
+			"event",
+			"ga",
+			"angulartics",
+			"question of the day",
+			"google",
+			"google-analytics",
+			"google",
+			"lifestats",
+			"endSession",
+			"wa",
+			"f.wa",
+			"Event",
+			"Wa",
+			"Event",
+			"Wa",
+			"logevent",
+			"page",
+			"logEvent",
+			"page",
+			"google",
+			"              ",
+			"media-object",
+			"media-boject",
+			"tab",
+			"font-size",
+			"question-link",
+			"from-",
+			"size-95",
+			"size-96",
+			"<b",
+			"newsfeed-container",
+			"news",
+			"round",
+			"style",
+			"size-100",
+			"col-md",
+			"\">",
+			"lifestats-",
+			"font",
+			"style",
+			"-->",
+			"profile",
+			"style",
+			"position",
+			"margin-top:"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"rotationAmount",
+			"showAlpha: true, clickoutFiresChange: true",
+			"<span",
+			"span>",
+			"input-group-addon",
+			"\\n",
+			"\\n \\",
+			"fullAngle",
+			"col-md-2",
+			"col-md-4",
+			"col-md-1",
+			"col-md-offset-2",
+			"col-md-10",
+			"col-md-8",
+			"col-md-offset-2",
+			"col-md-8",
+			"col-md-10",
+			"col-md-offset-1",
+			"col-md-offset-2",
+			"col-md-offset-3",
+			"col-md-5",
+			"col-md-3",
+			"col-md-8",
+			"col-md-7",
+			"col-md-6",
+			"col-md-10",
+			"col-md-offset-2",
+			"col-md-6",
+			"col-",
+			"col-md-6",
+			"col-md-offset-3",
+			"col-md-offset-2",
+			"hidden-xs",
+			"visible-xs",
+			"col-md-offset-2",
+			"col-md-8",
+			"col-md-6",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4842,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4444,
+								4444
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1188.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/main.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7662,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6810,
+								6810
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2143.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/scripts/controllers/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5616,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3489,
+								3489
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1890.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/bower_components/Raphael.Export/raphael.export.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10425,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8803,
+								8803
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4473.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/styles/main.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2612,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								27,
+								27
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 112.0
+	},
+	"project": "sher-negar.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"scripts/controllers/inde",
+				"app/scripts/controllers/index.js"
+			],
+			[
+				"index.js",
+				"node_modules/connect-livereload/index.js"
+			],
+			[
+				"profile.js",
+				"app/scripts/controllers/profile.js"
+			],
+			[
+				"amil",
+				"app/scripts/services/amIAFollower.js"
+			],
+			[
+				"follow.js",
+				"app/scripts/services/follow.js"
+			],
+			[
+				"page.js",
+				"app/scripts/services/Page.js"
+			],
+			[
+				"search.js",
+				"app/scripts/controllers/search.js"
+			],
+			[
+				"search.html",
+				"app/views/search.html"
+			],
+			[
+				"answer.html",
+				"app/views/answer.html"
+			],
+			[
+				"answer",
+				"app/scripts/controllers/answer.js"
+			],
+			[
+				"aggergate.h",
+				"app/views/aggregate.html"
+			],
+			[
+				"answer.js",
+				"app/scripts/controllers/answer.js"
+			],
+			[
+				"aggregate",
+				"app/views/aggregate.html"
+			],
+			[
+				"aggerga",
+				"app/views/aggregate.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 346.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

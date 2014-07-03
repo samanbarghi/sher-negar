@@ -1,0 +1,169 @@
+<form ng-submit="processPoem()">
+    <!-- General Settings -->
+    <div class="row">
+        <div class="col-md-2 ">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Settings</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="input-group">
+                                <span class="input-group-addon">Text-Color</span>
+                                <spectrum-colorpicker ng-model="form.textColor" options="{showInput: true, showAlpha: true, clickoutFiresChange: true}" ng-change="processPoem(false)"></spectrum-colorpicker>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="input-group">
+                                <span class="input-group-addon">Bg Type</span>
+                            <select ng-model="form.bgType" name="backgroundType" required ng-options="b.type as b.name for b in backgroundTypes" class="form-control" ng-change="processPoem(false)"></select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                            <span  class="input-group-addon">
+                                <span ng-switch on="form.bgType">
+                                    <span ng-switch-when="color">Background-Color</span>
+                                    <span ng-switch-when="gradient">Color #1</span>
+                                    <span ng-switch-when="rgradient">Color #1</span>
+                                </span>
+                            </span>
+                            <spectrum-colorpicker ng-model="form.bgColor" options="{showInput: true, showAlpha: true, clickoutFiresChange: true}" ng-change="processPoem(false)"></spectrum-colorpicker>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" ng-show="form.bgType == 'gradient' || form.bgType == 'rgradient'">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                            <span  class="input-group-addon">Color #2</span>
+                            <spectrum-colorpicker ng-model="form.bgColor2" options="{showInput: true, showAlpha: true, clickoutFiresChange: true}" ng-change="processPoem(false)"></spectrum-colorpicker>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                            <span  class="input-group-addon" >Canvas width</span>
+                            <input type="text" class="form-control" ng-model="form.width" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                            <span  class="input-group-addon" >Canvas height</span>
+                            <input type="text" class="form-control" ng-model="form.height" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                            <span  class="input-group-addon" ><i class="glyphicon glyphicon-font"></i></span>
+                        <select ng-model="form.font" ng-options="f.font as f.name for f in fonts" class="form-control"></select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <span  class="input-group-addon" ><i class="glyphicon glyphicon-text-height"></i></span>
+                        <input type="text" class="form-control" ng-model="form.fontSize" />
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="submit" class="btn btn-primary form-control" value="Preview" />
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="btn btn-danger form-control" ng-click="saveImage()"  data-toggle="modal" data-target="#myModal" >Save Image</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-7 text-center" >
+    <div id="canvas">
+    </div>
+    <canvas id="finalCanvas" ng-hide="true">
+    </canvas>
+</div>
+<div class="col-md-3"  >
+    <div class="col-md-11" >
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Poem</h3>
+            </div>
+            <div class="panel-body">
+                <textarea class="form-control" id="textValue" name="textValue" placeholder="Enter Peom" rows="20" style="text-align:right" ng-model="form.poem" ng-change="processPoem(true)">
+                </textarea>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+<br />
+<div class="row force-margin-top-zero">
+<div class="col-md-12 ">
+    <div class="form-inline">
+        <div class="input-group col-md-2">
+            <span class="input-group-addon">Vertical radius (px)</span>
+            <input type="text" class="form-control" ng-model="form.verticalRadius" ng-change="processPoem(true)" />
+        </div>
+    </div>
+    <div class="form-inline">
+        <div class="input-group col-md-2">
+            <span class="input-group-addon">horizontal radius (px)</span>
+            <input type="text" class="form-control" ng-model="form.horizontalRadius" ng-change="processPoem(true)" />
+        </div>
+    </div>
+    <div class="form-inline">
+        <div class="input-group col-md-2">
+            <span class="input-group-addon">Max angle (degree)</span>
+            <input type="text" id="maxAngleInput" class="form-control" ng-model="form.maxAngle" ng-change="processPoem(true)" />
+
+        </div>
+       <div class="col-md-1"> 
+            <div id="maxAngle"></div>
+       </div>
+    </div>
+    <div class="form-inline">
+        <div class="input-group col-md-2">
+            <span class="input-group-addon">Text rotation (degree)</span>
+            <input type="text" id="textRotationInput" class="form-control" ng-model="form.rotationAmount" ng-change="processPoem(true)" />
+        </div>
+        <div class="col-md-1"> 
+            <div id="textRotation"></div>
+        </div>
+    </div>
+</div>
+</div>
+</form>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="Save as image" aria-hidden="true">
+  <div class="modal-dialog" style="width:1000px">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Save as image</h4>
+      </div>
+      <div class="modal-body text-center">
+        <img id="myImg" />
+      </div>
+      <div class="modal-footer">
+        Right click -> Save Image as ... 
+      </div>
+    </div>
+  </div>
+</div>
