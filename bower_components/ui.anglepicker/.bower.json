@@ -1,0 +1,13 @@
+{
+  "name": "ui.anglepicker",
+  "homepage": "https://github.com/bgrins/ui.anglepicker",
+  "_release": "2c05020de0",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "2c05020de0304bd7a397470f5a913b26ae8608a2"
+  },
+  "_source": "https://github.com/bgrins/ui.anglepicker.git",
+  "_target": "*",
+  "_originalSource": "ui.anglepicker"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Raphael.Export",
+  "homepage": "https://github.com/ElbertF/Raphael.Export",
+  "_release": "4088f317fb",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "4088f317fb346ee4cd5ad34d1a6ac15de1647553"
+  },
+  "_source": "git://github.com/ElbertF/Raphael.Export.git",
+  "_target": "*",
+  "_originalSource": "ElbertF/Raphael.Export"
+}

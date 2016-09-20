@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Raphael.Export Tests</title>
+
+		<link rel="stylesheet" href="qunit.css" type="text/css"/>
+
+		<style type="text/css">
+			#visual-tests {
+				font-family: Arial;
+				margin: 16px 16px;
+			}
+
+			.paper, .exported-paper {
+				border: 1px solid #ccc;
+				display: block;
+				float: left;
+				height: 240px;
+				margin-top: 16px;
+				margin-right: 8px;
+				width: 320px;
+			}
+		</style>
+
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="qunit.js"></script>
+		<script type="text/javascript" src="raphael.js"></script>
+		<script type="text/javascript" src="tiger.js"></script>
+		<script type="text/javascript" src="../raphael.export.js"></script>
+
+		<script type="text/javascript">
+			$(function() {
+				module('toSVG()');
+
+				test('is defined', function() {
+					equal(typeof Raphael.fn.toSVG, 'function');
+				});
+
+				var paper = Raphael('raphael-paper');
+
+				paper.rect(50, 40, 50, 50)
+					.rotate(10)
+					.scale(1.2)
+					.translate(10, 10)
+					;
+
+				paper.circle(50, 40, 20);
+
+				paper.set(
+					paper.rect(50, 40, 50, 50)
+						.attr({ fill: '135-#f00-#ff0', transform: 'T120,120', 'stroke-dasharray': '- ', 'stroke-width': 3 })
+						,
+					paper.circle(50, 40, 20)
+						.attr({ fill: '#f00', transform: 'T60,150', opacity: .5 })
+						.glow({ width: 50, color: '#F00' })
+					);
+
+				paper.path('M10,10L10,20L20,20L20,30')
+					.transform('T200,0')
+					;
+
+				paper.path('M10,10L10,20L20,20L20,30')
+					.rotate(-25)
+					.scale(1.75)
+					.translate(10,5)
+					;
+
+				paper.text(120, 30, 'Hello World')
+					.attr({
+						'text-anchor': 'start'
+					});
+
+				paper.text(300, 80, 'Medium Font,\nRight Anchored')
+					.attr({
+						'text-anchor': 'end',
+						'font-size': 16
+					});
+
+				paper.text(140, 120, 'Bigger Font, Middle Anchored')
+					.attr({
+						'text-anchor': 'middle',
+						'font-size': 20,
+						'transform': 'T40,20S1.2R10'
+					});
+
+				// Rounded rect
+				paper.rect(10, 160, 40, 40, 5)
+
+				var paperTiger = new Raphael('tiger');
+				paperTiger.add(tiger);
+
+				var svg = paper.toSVG();
+				var tigerSVG = paperTiger.toSVG();
+
+				if ( Raphael.svg === true ) {
+					// Currently doesn't work on Firefox 3.6
+					document.getElementById('raphael-export-paper').innerHTML = svg;
+					document.getElementById('tiger-exported').innerHTML = tigerSVG;
+				} else {
+					$('#raphael-export-paper')
+						.html('<p>Not an SVG Browser but here\'s the SVG exported.</p>')
+						.text(svg)
+						;
+					$('#tiger-exported').text(svg);
+				}
+
+				test('does not duplicate tag attributes', function() {
+					ok(svg.indexOf(' x="50" x="50"') === -1, 'Duplicate x="50" found');
+				});
+
+				test('escapes quotes', function() {
+					ok(svg.indexOf('&quot;Arial&quot') > -1, '"&quot;Arial&quot;" not found');
+				});
+
+				test('serializes text tag', function() {
+					equal($(svg).find('tspan:first').text(), 'Hello World', 'text present');
+
+					ok($(svg).find('tspan[dy]').length > 0, 'tspan dy attribute present');
+
+					ok($(svg).find('tspan[dy]:first"').attr('dy') !== '0', 'tspan dy attribute is not "0"');
+
+					ok($($(svg).find('text')[1]).attr('font-size') === '16px', 'tspan font-size attribute is "16px"');
+				});
+
+				test('serializes path tag', function() {
+					ok($(svg).find('path[d]').length > 0, 'path d attribute present');
+				});
+			});
+
+		</script>
+	</head>
+	<body>
+		<h1 id="qunit-header">Raphael.Export Tests</h1>
+
+		<h2 id="qunit-banner"></h2>
+
+		<div id="qunit-testrunner-toolbar"></div>
+
+		<h2 id="qunit-userAgent"></h2>
+
+		<ol id="qunit-tests"></ol>
+
+		<div id="qunit-fixture"></div>
+
+		<div id="visual-tests">
+			<h2>Visual Tests for SVG Browsers</h2>
+
+			<p>Left = Raphael, Right = Raphael.Export (via DOM insert)</p>
+
+			<div id="raphael-paper"        class="paper"></div>
+			<div id="raphael-export-paper" class="exported-paper"></div>
+			<br style="clear: both;" />
+			<div id="tiger"								 class="paper"></div>
+			<div id="tiger-exported"			 class="exported-paper"></div>
+		</div>
+	</body>
+</html>
