@@ -7,7 +7,7 @@ angular.module('sherNegarApp', [
   'ngRoute',
   'angularSpectrumColorpicker'
 ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -16,4 +16,5 @@ angular.module('sherNegarApp', [
       .otherwise({
         redirectTo: '/'
       });
+    $locationProvider.html5Mode(true);
   });

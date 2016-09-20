@@ -15,7 +15,7 @@ angular.module('sherNegarApp')
 	];
    /*jshint multistr: true */
 
-	$scope.form = {};   
+	$scope.form = {};
 
 	$scope.resetToDefault = function(){
 	   //form default values
@@ -47,7 +47,7 @@ angular.module('sherNegarApp')
 	    width: 851,
 	    height: 425,
 	    textColor: '#ffffff',
-	    bgType: 'color', 
+	    bgType: 'color',
 	    bgColor: '#36393D',
 	    bgColor2: '#777777',
 	    font: 'nastaliq',
@@ -58,13 +58,13 @@ angular.module('sherNegarApp')
 	    rotationAmount: 0
 
 		};
-	
+
 	}
 	//set everything to default
 	$scope.resetToDefault();
-	
-	
-	//bootstrap the canvas	
+
+
+	//bootstrap the canvas
 	var paper = new Raphael('canvas', $scope.form.width, $scope.form.height);
 	var bgRect = null;
 	var radialCircle = null;
@@ -75,9 +75,9 @@ angular.module('sherNegarApp')
 
 	var deg2rad = function(degrees){
 		return  degrees * (Math.PI/180);
-	};		
+	};
 
-	//if reset is true, reset the canvas 
+	//if reset is true, reset the canvas
 	$scope.processPoem = function(reset){
 		if(reset){
 			paper.clear();
@@ -89,7 +89,7 @@ angular.module('sherNegarApp')
 		}
 		paper.setSize($scope.form.width, $scope.form.height);
 		radialCircle.hide();
-		
+
 
 		//Set the background
 		switch($scope.form.bgType){
@@ -98,7 +98,7 @@ angular.module('sherNegarApp')
 				bgRect.attr("stroke", $scope.form.bgColor);
 				break;
 			case 'gradient':
-				bgRect.attr("fill", '90-'+$scope.form.bgColor + '-'+$scope.form.bgColor2);
+				bgRect.attr("fill", '190-'+$scope.form.bgColor + '-'+$scope.form.bgColor2);
 				bgRect.attr("stroke", '#ffffff');
 				break;
 			case 'rgradient':
@@ -108,12 +108,11 @@ angular.module('sherNegarApp')
 				radialCircle.attr('fill', 'r'+$scope.form.bgColor2 + '-'+$scope.form.bgColor);
 				radialCircle.attr("stroke", $scope.form.bgColor);
 				circleFt.showHandles();
-				
+
 				break;
 			default:
 				break;
 		}
-
 
 		sun(reset);
 	};
@@ -131,7 +130,7 @@ angular.module('sherNegarApp')
        var svg = paper.toSVG();
 
        //Use canvg to draw the SVG onto the empty canvas
-       canvg(document.getElementById('finalCanvas'), svg);	
+       canvg(document.getElementById('finalCanvas'), svg);
        var dataURL = document.getElementById('finalCanvas').toDataURL("image/png");
        document.getElementById('myImg').src = dataURL;
 
@@ -150,7 +149,7 @@ angular.module('sherNegarApp')
 			//width, height, verticalRadius, hrRadius, textSize
 		    var lines = $scope.form.poem.split('\n');
 		    var fullAngle = $scope.form.maxAngle /  (lines.length - 1);
-		    
+
 			textGroup = paper.set();
 		    for (var index = 0 ; index < lines.length ; index++){
 
@@ -163,10 +162,10 @@ angular.module('sherNegarApp')
 			    textGroup.push(verse);
 		    }
 			ft = paper.freeTransform(textGroup);
-		}    
+		}
 		textGroup.attr({ 'font-size': $scope.form.fontSize, 'font-family': $scope.form.font, 'fill':$scope.form.textColor });
 
-	
+
 	};
 
 
